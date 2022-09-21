@@ -2,9 +2,135 @@
     --font-primary: "Cinzel", serif;
     --font-secondary: "Roboto", sans-serif;
 
-    --bg-color:#ECEAE7;
-    --text-color:#252323;
-    --color-primary:#E3A14C;
-    --color-secondary:#7E562C;
-    --color-grey:#6B6C6B;
+    --bg-color: #eceae7;
+    --text-color: #252323;
+    --color-primary: #e3a14c;
+    --color-primary-opacity50: #e3a24cb6;
+    --color-secondary: #7e562c;
+    --color-grey: #6b6c6b;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/* GLOBALES */
+body {
+    font-size: 1.6rem;
+    font-family: var(--font-primary);
+    background-image: url(../assets/img/bgImage.jpg);
+}
+img {
+    height: unset;
+    width: unset;
+    max-width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+}
+h1 {
+    font-size: 4.8rem;
+}
+.container {
+    max-width: 140rem;
+    margin: 0 auto;
+}
+
+/* UTILITIES */
+.font-size-30 {
+    font-size: 3rem;
+}
+.color-bg {
+    color: var(--bg-color);
+}
+
+/* HEADER */
+
+.head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--bg-color);
+}
+.head__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head__logo {
+    max-width: 20rem;
+}
+.navigation {
+    width: 30rem;
+}
+.navigation__bar {
+    display: flex;
+    justify-content: space-around;
+}
+.navigation__link {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.hero {
+    height: 100vh;
+}
+.hero__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.hero__box {
+    width: 80%;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    background: linear-gradient( transparent 70%, var(--color-primary-opacity50) 0% 70%) left bottom/80% 250%;
+    background-repeat: no-repeat;
+    
+}
+.hero__boxTitle {
+    width: 50%;
+    color: var(--text-color);
+}
+.hero__img {
+    width: 40%;
+}
+
+@media (max-width: 768px) {
+    .hero__box {
+        flex-direction: column-reverse;
+        width: 95%;
+        background: linear-gradient( transparent 70%, var(--color-primary-opacity50) 0% 70%) left bottom/80% 250%;
+        /* background-color: var(--color-primary-opacity50); */
+    }
+    .hero__title{
+        text-align: center;
+        
+    }
+    .hero__img{
+        width: 50%;
+    }
+}
+@media (max-width: 480px){
+    .hero__img{
+        width: 80%;
+    }
 }
