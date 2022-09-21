@@ -1,0 +1,10 @@
+:root {
+    --font-primary: "Cinzel", serif;
+    --font-secondary: "Roboto", sans-serif;
+
+    --bg-color:#ECEAE7;
+    --text-color:#252323;
+    --color-primary:#E3A14C;
+    --color-secondary:#7E562C;
+    --color-grey:#6B6C6B;
+}
