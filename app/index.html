@@ -14,7 +14,7 @@
             href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Roboto&display=swap"
             rel="stylesheet"
         />
-        <link rel="preload" href="css/style.css" />
+        <link rel="preload" href="css/style.css" as="style"/>
         <link rel="stylesheet" href="css/style.css" />
         <title>Antonio Moleiro</title>
     </head>
@@ -56,9 +56,20 @@
                     </div>
                 </div>
             </section>
-
-
-
+            <section class="presentation ">
+                <div class="presentation__content container">
+                    <div class="presentation__boxImg">
+                        <div class="presentation__img"><picture>
+                            <source srcset="../assets/img/uncasual.avif" type="image/avif">
+                            <source srcset="../assets/img/uncasual.webp" type="image/webp">
+                            <img width ="200" heigth="300" src="../assets/img/uncasual.jpg" alt="antonio moleiro estudio arquitectura" />
+                        </picture></div>
+                    </div>
+                    <div class="presentation__info">
+                        <h2 class="presentation__title">Experto en instalaciones de energía solar y domótica</h2>
+                    </div>
+                </div>
+            </section>
         </main>
     </body>
 </html>
