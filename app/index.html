@@ -14,12 +14,12 @@
             href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Roboto&display=swap"
             rel="stylesheet"
         />
-        <link rel="preload" href="css/style.css" as="style"/>
+        <link rel="preload" href="css/style.css" as="style" />
         <link rel="stylesheet" href="css/style.css" />
         <title>Antonio Moleiro</title>
     </head>
     <body>
-        <header class="head">
+        <header id="head" class="head">
             <div class="head__content container">
                 <div class="head__logo">
                     <picture>
@@ -56,20 +56,51 @@
                     </div>
                 </div>
             </section>
-            <section class="presentation ">
+            <section class="presentation">
                 <div class="presentation__content container">
                     <div class="presentation__boxImg">
-                        <div class="presentation__img"><picture>
-                            <source srcset="../assets/img/uncasual.avif" type="image/avif">
-                            <source srcset="../assets/img/uncasual.webp" type="image/webp">
-                            <img width ="200" heigth="300" src="../assets/img/uncasual.jpg" alt="antonio moleiro estudio arquitectura" />
-                        </picture></div>
+                        <div class="presentation__img">
+                            <picture>
+                                <source srcset="../assets/img/uncasual.avif" type="image/avif" />
+                                <source srcset="../assets/img/uncasual.webp" type="image/webp" />
+                                <img width="200" heigth="300" src="../assets/img/uncasual.jpg" alt="antonio moleiro estudio arquitectura" />
+                            </picture>
+                        </div>
                     </div>
                     <div class="presentation__info">
                         <h2 class="presentation__title">Experto en instalaciones de energía solar y domótica</h2>
                     </div>
                 </div>
             </section>
+            <section class="achieve">
+                <div class="achieve__content container">
+                    <article class="achieve__info">
+                        <h3 class="achieve__title">Tecnologías</h3>
+                        <ul>
+                            <li class="achieve__text">«Cosas con luces»</li>
+                            <li class="achieve__text">«Cosas que se mueven»</li>
+                            <li class="achieve__text">«Audio y demás»</li>
+                        </ul>
+                    </article>
+                    <article class="achieve__info">
+                        <h3 class="achieve__title">Logros</h3>
+                        <ul>
+                            <li class="achieve__text">«46 Instalaciones»</li>
+                            <li class="achieve__text">«23 Trabajos»</li>
+                            <li class="achieve__text">«14 variedades»</li>
+                        </ul>
+                    </article>
+                    <article class="achieve__info">
+                        <h3 class="achieve__title">Experiencias</h3>
+                        <ul>
+                            <li class="achieve__text">«Saltar a la comba»</li>
+                            <li class="achieve__text">«Mirarse al espejo»</li>
+                            <li class="achieve__text">«Freir un huevo»</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
         </main>
+        <script type="module" src="js/script.js"></script>
     </body>
 </html>
