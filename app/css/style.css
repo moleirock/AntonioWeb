@@ -3,6 +3,7 @@
     --font-secondary: "Roboto", sans-serif;
 
     --bg-color: #eceae7;
+    --bg-color-opacity50: #eceae7ce;
     --text-color: #252323;
     --text-color-opacity50: #252323af;
     --color-primary: #e3a14c;
@@ -29,9 +30,9 @@ body {
     font-size: 1.6rem;
     font-family: var(--font-primary);
     color: var(--text-color);
+    background-attachment: fixed;
     background-image: url(../assets/img/bgImage.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: 50%;
 }
 img {
@@ -70,6 +71,9 @@ li {
 .color-bg {
     color: var(--bg-color);
 }
+.display-none {
+    display: none;
+}
 
 /* HEADER */
 
@@ -81,7 +85,8 @@ li {
     background-color: var(--bg-color);
     box-shadow: var(--color-grey) 1rem 0 3rem;
     border-bottom: var(--color-grey) solid 3px;
-    transition: transform .5s ease-in-out 0s;
+    transition: transform 0.5s ease-in-out 0s;
+    padding: 0.5rem;
 }
 .head__content {
     display: flex;
@@ -103,11 +108,9 @@ li {
     color: var(--text-color);
     font-size: 2rem;
     font-weight: 700;
-    
-    
 }
 .navigation__link:hover {
-    transition: border .1s ease-in 0s;
+    transition: border 0.1s ease-in 0s;
     border-bottom: var(--color-primary) solid 3px;
 }
 
@@ -140,7 +143,6 @@ li {
 
 @media (max-width: 768px) {
     .hero__box {
-        /* margin-top: 3rem; */
         flex-direction: column-reverse;
         width: 95%;
         background: linear-gradient(transparent 70%, var(--color-primary-opacity50) 0% 100%) left bottom/100% 250%;
@@ -253,4 +255,48 @@ li {
         border: unset;
         border-top: solid var(--bg-color);
     }
+}
+
+/* MOTIVATION CARDS */
+.motivation {
+    background-color: var(--bg-color-opacity50);
+}
+.motivation__content {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    padding: 3rem 0;
+}
+.motivation__card {
+    width: 40%;
+    overflow: hidden;
+    padding: 3rem 0;
+    background: linear-gradient(transparent 30%, var(--color-primary) 30%) no-repeat;
+}
+
+.motivationCard__img {
+    width: 70%;
+    margin: 0 auto;
+}
+.motivationCard__title {
+    margin: 5rem 0;
+    padding: 0 0.5rem;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .motivation__content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .motivation__card {
+        width: 90%;
+    }
+}
+
+.motivation__card-right {
+    background: linear-gradient(var(--text-color) 70%, transparent 70%) no-repeat;
+}
+
+.motivationCard__title-right {
+    color: var(--color-primary);
 }
