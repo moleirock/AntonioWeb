@@ -43,6 +43,7 @@ img {
 }
 a {
     text-decoration: none;
+    color: unset;
 }
 h1 {
     font-size: 5rem;
@@ -52,6 +53,10 @@ h2 {
 }
 h3 {
     font-size: 3.2rem;
+}
+h4{
+    font-size: 1.8rem;
+    text-decoration: underline;
 }
 li {
     list-style: none;
@@ -299,4 +304,56 @@ li {
 
 .motivationCard__title-right {
     color: var(--color-primary);
+}
+
+/* FOOTER */
+.footer {
+    font-family: var(--font-secondary);
+    color: var(--bg-color);
+    background-color: var(--text-color);
+    border-top: solid 2rem var(--color-grey);
+    
+}
+.footer__content {
+    margin: 0 auto;
+    
+}
+.footer__info {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 3rem 0;
+}
+.footer__links {
+    width: 30%;
+    line-height: 2;
+}
+.footer__links a:hover{
+    color: var(--color-primary);
+}
+.footer__links:nth-child(2){
+    border-left: solid 3px var(--bg-color);
+    border-right: solid 3px var(--bg-color);
+}
+.footer__copy{
+    width: 70%;
+    margin: 0 auto;
+    border-top: solid 3px var(--bg-color);
+    padding: 3rem 0;
+    text-align: center;
+}
+
+@media (max-width: 768px){
+    .footer__info{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .footer__links{
+        width: unset;
+    }
+    .footer__links:nth-child(2){
+        border: unset;
+    }
 }
