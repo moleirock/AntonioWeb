@@ -68,18 +68,11 @@ li {
 }
 .btn {
     background: unset;
-    border: solid var(--color-secondary) 2px;
-    border-radius: 2.5rem;
-    padding: 1rem;
-    font-size: 2rem;
-    font-weight: 900;
-    color: var(--color-secondary);
     cursor: pointer;
+    border: unset;
+    text-align: center;
 }
-.btn:hover {
-    background-color: var(--color-secondary);
-    color: var(--color-primary);
-}
+
 
 /* UTILITIES */
 .font-size-36 {
@@ -90,6 +83,14 @@ li {
 }
 .display-none {
     display: none;
+}
+.slide__out{
+    transform: translateY(-200%);
+}
+@media (max-width: 768px){
+    .slide__out{
+        transform: translateX(-200%);
+    }
 }
 
 /* HEADER */
@@ -102,7 +103,7 @@ li {
     background-color: var(--color-white);
     box-shadow: var(--color-grey) 1rem 0 3rem;
     transition: transform 0.5s ease-in-out 0s;
-    padding: 0.5rem;
+    padding: 0.5rem 2rem;
 }
 .head__content {
     display: flex;
@@ -203,6 +204,18 @@ li {
     text-align: left;
     padding: 1rem;
 }
+.btn-about{
+    border: solid var(--color-secondary) 2px;
+    border-radius: 2.5rem;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--color-secondary);
+}
+.btn-about:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+}
 .btn-closeAbout{
     position: absolute;
     top: 10%;
@@ -210,15 +223,12 @@ li {
     transform: translate(-50%,-50%);
     width: 5rem;
     height: 5rem;
-    text-align: center;
     font-size: 3rem;
     font-family: var(--font-secondary);
     font-weight: 400;
     color: var(--color-secondary);
     background: var(--color-white-opacity50);
-    border: unset;
     border-radius: 50%;
-    cursor: pointer;
 }
 @media (max-width: 768px ){
     .about__info{
@@ -330,18 +340,21 @@ li {
 /* MOTIVATION CARDS */
 .motivation {
     background-color: var(--color-white-opacity50);
+    overflow: hidden;
 }
 .motivation__content {
     display: flex;
     justify-content: center;
     gap: 3rem;
     padding: 3rem 0;
+    
 }
 .motivation__card {
     width: 40%;
-    overflow: hidden;
     padding: 3rem 0;
     background: linear-gradient(transparent 30%, var(--color-primary) 30%) no-repeat;
+    transition: transform 2s ease-in-out 0s;
+    
 }
 
 .motivationCard__img {

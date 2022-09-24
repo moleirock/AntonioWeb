@@ -1,4 +1,4 @@
-export default function hideHead() {
+export const hideHead = () => {
     window.addEventListener("wheel", (e) => {
         if (e.deltaY > 0) {
             head.style.transform = "translateY(-101%)";
@@ -6,4 +6,4 @@ export default function hideHead() {
             head.style.transform = "unset";
         }
     });
-}
+};
