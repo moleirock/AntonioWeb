@@ -82,14 +82,20 @@ li {
     color: var(--color-white);
 }
 .display-none {
-    display: none;
+    display: none!important;
 }
 .slide__out{
     transform: translateY(-200%);
 }
+.slide__in{
+    transform: translateY(200%);
+}
 @media (max-width: 768px){
     .slide__out{
         transform: translateX(-200%);
+    }
+    .slide__in{
+        transform: translateX(200%);
     }
 }
 
@@ -347,14 +353,12 @@ li {
     justify-content: center;
     gap: 3rem;
     padding: 3rem 0;
-    
+    transition: transform 2s ease-in-out 0s;
 }
 .motivation__card {
     width: 40%;
     padding: 3rem 0;
     background: linear-gradient(transparent 30%, var(--color-primary) 30%) no-repeat;
-    transition: transform 2s ease-in-out 0s;
-    
 }
 
 .motivationCard__img {

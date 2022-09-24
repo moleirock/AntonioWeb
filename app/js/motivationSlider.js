@@ -1,22 +1,19 @@
 export const motivationSlider = () => {
-    setInterval(slide, 10000);
+    setInterval(slide, 9500);
 };
 
-const motivationCards = document.querySelectorAll(".motivation__card");
 const slide = () => {
-    for (const motivationCard of motivationCards) {
-        motivationCard.classList.toggle("slide__out");
-        
-    }
-    setTimeout(()=>{
-        for (const motivationCard of motivationCards) {
-            motivationCard.classList.toggle("display-none");
-        }
-    },2000)
-    setTimeout(()=>{
-        for (const motivationCard of motivationCards) {
-            motivationCard.classList.toggle("slide__out");
-        }
-    },3000)
-    
+    const visible = document.querySelector(".motivation__content:not(.display-none)");
+    const noVisible = document.querySelector(".motivation__content.display-none");
+    visible.classList.toggle("slide__out");
+    noVisible.classList.toggle("slide__in");
+
+    setTimeout(() => {
+        visible.classList.toggle("display-none")
+        noVisible.classList.toggle("display-none");
+    }, 2000);
+    setTimeout(() => {
+        visible.classList.toggle("slide__out");
+        noVisible.classList.toggle("slide__in");
+    }, 2100);
 };
