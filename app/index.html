@@ -27,16 +27,25 @@
                         <img width="500" heigth="150" src="assets/img/logoAntonio.png" alt="logo antonio moleiro" class="logo__img" />
                     </picture>
                 </div>
-                <div class="navigation display-none">
+                <div class="navigation">
                     <nav class="navigation__bar">
                         <a href="" class="navigation__link active">Home</a>
                         <a href="" class="navigation__link">Projects</a>
                         <a href="" class="navigation__link">Contact</a>
                     </nav>
                 </div>
-                <button class="btn menu"><img src="assets/icons/menu.svg" alt="icono menu" width="28" height="28" /></button>
+                <button id="btnMenu" class="btn navigation__menu"><img src="assets/icons/menu.svg" alt="icono menu" width="28" height="28" /></button>
             </div>
         </header>
+        <div id="sideOverlay" class="navigation__overlay display-none">
+            <div id="sideNav" class="navigation__side slide__out">
+                <nav class="navigation__bar navigation__bar-side">
+                    <a href="" class="navigation__link navigation__link-side active"><img src="assets/icons/home.svg" alt="icono home">Home</a>
+                    <a href="" class="navigation__link navigation__link-side"><img src="assets/icons/projects.svg" alt="icono projects">Projects</a>
+                    <a href="" class="navigation__link navigation__link-side"><img src="assets/icons/contact.svg" alt="icono contact">Contact</a>
+                </nav>
+            </div>
+        </div>
         <main>
             <section class="hero">
                 <div class="hero__content container">
@@ -69,8 +78,9 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, aliquid corporis. Libero, obcaecati. Saepe expedita
                         explicabo, praesentium culpa aut asperiores possimus vel id quos repudiandae iure repellat, vitae amet quidem?
                     </p>
+                    <button class="btn btn-closeAbout">X</button>
                 </div>
-                <button class="btn btn-closeAbout">X</button>
+                
             </section>
             <section class="presentation">
                 <div class="presentation__content container">
@@ -140,7 +150,7 @@
                     </div>
                 </div>
                 <div class="motivation__content container display-none">
-                    <div class="motivation__card motivation__card-left ">
+                    <div class="motivation__card motivation__card-left">
                         <div class="motivationCard__img motivationCard__img-left">
                             <picture>
                                 <source srcset="../assets/img/tower.avif" type="image/avif" />
@@ -150,7 +160,7 @@
                         </div>
                         <h2 class="motivationCard__title motivationCard__title-left">Profesionalidad</h2>
                     </div>
-                    <div class="motivation__card motivation__card-right ">
+                    <div class="motivation__card motivation__card-right">
                         <div class="motivationCard__img motivationCard__img-right">
                             <h2 class="motivationCard__title motivationCard__title-right">Elegancia</h2>
                             <picture>
