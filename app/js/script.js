@@ -2,7 +2,10 @@ import {hideHead} from "./hideHead.js";
 import {aboutMe} from "./about.js";
 import {motivationSlider} from "./motivationSlider.js"
 import {toggleMenu} from './btnMenu.js'
-aboutMe();
+const html = document.querySelector("html");
 hideHead();
-motivationSlider();
 toggleMenu();
+if (html.dataset.document=="index"){
+aboutMe();
+motivationSlider();
+}

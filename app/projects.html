@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html data-document="projects" lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Bienvenido a la página personal de Antonio Moleiro" />
+
+        <link rel="preload" href="css/normalize.css" as="style" />
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Roboto&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preload" href="css/style.css" as="style" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Antonio Moleiro</title>
+    </head>
+    <body class="bg-white">
+        <header id="head" class="head">
+            <div class="head__content container">
+                <div class="head__logo">
+                    <picture>
+                        <source srcset="assets/img/logoAntonio.webp" type="image/webp" />
+                        <img width="500" heigth="150" src="assets/img/logoAntonio.png" alt="logo antonio moleiro" class="logo__img" />
+                    </picture>
+                </div>
+                <div class="navigation">
+                    <nav class="navigation__bar">
+                        <a href="index.html" class="navigation__link">Home</a>
+                        <a href="projects.html" class="navigation__link active">Projects</a>
+                        <a href="" class="navigation__link">Contact</a>
+                    </nav>
+                </div>
+                <button id="btnMenu" class="btn navigation__menu">
+                    <img src="assets/icons/menu.svg" alt="icono menu" width="28" height="28" />
+                </button>
+            </div>
+        </header>
+        <div id="sideOverlay" class="navigation__overlay display-none">
+            <div id="sideNav" class="navigation__side slide__out">
+                <nav class="navigation__bar navigation__bar-side">
+                    <a href="index.html" class="navigation__link navigation__link-side"
+                        ><img src="assets/icons/home.svg" alt="icono home" />Home</a
+                    >
+                    <a href="projects.html " class="navigation__link navigation__link-side active"
+                        ><img src="assets/icons/projects.svg" alt="icono projects" />Projects</a
+                    >
+                    <a href="" class="navigation__link navigation__link-side"
+                        ><img src="assets/icons/contact.svg" alt="icono contact" />Contact</a
+                    >
+                </nav>
+            </div>
+        </div>
+        <main>
+            <div class="pageTitle">
+                <h1>Proyectos</h1>
+            </div>
+            <section class="project">
+                <article class="project__box container">
+                    <div class="project__imgBox">
+                        <picture>
+                            <source srcset="assets/img/solarSmall.avif" type="image/avif" />
+                            <source srcset="assets/img/solarSmall.webp" type="image/webp" />
+                            <img class="project__img" width="200" heigth="300" src="assets/img/solarSmall.jpg" alt="solar panel" />
+                        </picture>
+                    </div>
+                    <div class="project__info">
+                        <h2 class="project__title">Proyecto el primero</h2>
+                        <p>
+                            Este es un bonito proyecto hecho en una casa para personas, personas que necesitan ver de noche y calentar el
+                            café por la mañana.
+                        </p>
+                        <ul>
+                            <li>7000kw de instalación solar.</li>
+                            <li>Cosas técnicas.</li>
+                            <li>Más cosas técnicas</li>
+                            <li>Y que sé yo.</li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+            <section class="project">
+                <article class="project__box container">
+                    <div class="project__imgBox">
+                        <picture>
+                            <source srcset="assets/img/ligthsFall.avif" type="image/avif" />
+                            <source srcset="assets/img/ligthsFall.webp" type="image/webp" />
+                            <img class="project__img" width="200" heigth="300" src="assets/img/ligthsFall.jpg" alt="house ligths" />
+                        </picture>
+                    </div>
+                    <div class="project__info">
+                        <h2 class="project__title">Proyecto el segundo</h2>
+                        <p>
+                            Este es un bonito proyecto hecho en una casa para personas, personas que necesitan ver de noche y calentar el
+                            café por la mañana.
+                        </p>
+                        <ul>
+                            <li>7000kw de instalación solar.</li>
+                            <li>Cosas técnicas.</li>
+                            <li>Más cosas técnicas</li>
+                            <li>Y que sé yo.</li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+            <section class="project">
+                <article class="project__box container">
+                    <div class="project__imgBox">
+                        <picture>
+                            <source srcset="assets/img/solarPark.avif" type="image/avif" />
+                            <source srcset="assets/img/solarPark.webp" type="image/webp" />
+                            <img class="project__img" width="200" heigth="300" src="assets/img/solarPark.jpg" alt="solar park" />
+                        </picture>
+                    </div>
+                    <div class="project__info">
+                        <h2 class="project__title">Proyecto el tercero</h2>
+                        <p>
+                            Este es un bonito proyecto hecho en una casa para personas, personas que necesitan ver de noche y calentar el
+                            café por la mañana.
+                        </p>
+                        <ul>
+                            <li>7000kw de instalación solar.</li>
+                            <li>Cosas técnicas.</li>
+                            <li>Más cosas técnicas</li>
+                            <li>Y que sé yo.</li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__content container">
+                <div class="footer__info">
+                    <div class="footer__links">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="">Política de privacidad</a></li>
+                            <li><a href="">Aviso legal</a></li>
+                            <li><a href="">Política de cookies</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__links">
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li><a href="">¿Quíenes somos?</a></li>
+                            <li><a href="">Conócenos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__links">
+                        <h4>Enlaces de Interés</h4>
+                        <ul>
+                            <li><a href="">Cosas y más cosas</a></li>
+                            <a href="">Ni idea de que poner</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="div">
+                    <p class="footer__copy">Copyright © Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </footer>
+        <script type="module" src="js/script.js"></script>
+    </body>
+</html>
