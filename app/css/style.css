@@ -514,7 +514,7 @@ li {
     width: 100%;
     padding: 2rem 0 2rem 2rem;
 }
-.project__img {
+.project__video {
     width: 100%;
     box-shadow: 0 0 3rem var(--color-secondary);
     border-radius: 1rem;
