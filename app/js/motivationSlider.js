@@ -1,5 +1,9 @@
+const timeInterval = 9500;
+const timeTransition = 2000;
+const timeTransitionDelay = 2050;
+
 export const motivationSlider = () => {
-    setInterval(slide, 9500);
+    setInterval(slide, timeInterval);
 };
 
 const slide = () => {
@@ -11,9 +15,9 @@ const slide = () => {
     setTimeout(() => {
         visible.classList.toggle("display-none")
         noVisible.classList.toggle("display-none");
-    }, 2000);
+    }, timeTransition);
     setTimeout(() => {
         visible.classList.toggle("slide__out");
         noVisible.classList.toggle("slide__in");
-    }, 2100);
+    }, timeTransitionDelay);
 };
