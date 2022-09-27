@@ -2,11 +2,11 @@ import {hideHead} from "./hideHead.js";
 import {aboutMe} from "./about.js";
 import {motivationSlider} from "./motivationSlider.js"
 import {toggleMenu} from './btnMenu.js'
-import { playOnHover } from "./playOnHover.js";
+import { playVideo } from "./playOnHover.js";
 const html = document.querySelector("html");
 hideHead();
 toggleMenu();
-playOnHover();
+playVideo();
 if (html.dataset.document=="index"){
 aboutMe();
 motivationSlider();
