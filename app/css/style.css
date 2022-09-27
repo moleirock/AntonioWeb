@@ -518,6 +518,8 @@ li {
     width: 100%;
     box-shadow: 0 0 3rem var(--color-secondary);
     border-radius: 1rem;
+    object-fit: cover;
+    max-height: 39rem;
 }
 .project__title {
     padding: 2rem 1rem 1rem 0;
