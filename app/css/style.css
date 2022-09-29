@@ -30,9 +30,14 @@ body {
     font-family: var(--font-primary);
     color: var(--color-secondary);
 }
+.webp .body{
+    background-image: url(../assets/img/bgIndex.webp);
+}
+.no-webp .body{
+    background-image: url(../assets/img/bgIndex.jpg);
+}
 .body {
     background-attachment: fixed;
-    background-image: url(../assets/img/bgIndex.jpg);
     background-repeat: no-repeat;
     background-position: 50%;
 }
@@ -248,14 +253,17 @@ li {
     width: 100vw;
     height: 100vh;
     background-color: var(--color-secondary-opacity50);
+    backdrop-filter: blur(3px);
 }
 .about__info {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: var(--color-secondary);
-    color: var(--color-white);
+    background-color: var(--color-primary-opacity50);
+    backdrop-filter: blur(3px);
+    color: var(--color-secondary);
+    border-radius: 1rem;
     padding: 2rem;
     text-align: center;
     line-height: 1.6;
@@ -274,8 +282,8 @@ li {
     font-size: 3rem;
     font-family: var(--font-secondary);
     font-weight: 400;
-    color: var(--color-secondary);
-    background: var(--color-white-opacity50);
+    color: var(--color-white);
+    background: var(--color-secondary-opacity50);
     border-radius: 50%;
 }
 @media (max-width: 768px) {
@@ -401,7 +409,6 @@ li {
     width: 40%;
     padding: 3rem 0;
     background: linear-gradient(transparent 30%, var(--color-primary) 30%) no-repeat;
-    border-radius: 1rem;
 }
 
 .motivationCard__img {

@@ -6,14 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Bienvenido a la página personal de Antonio Moleiro" />
 
-        <link rel="preload" href="css/normalize.css" as="style" />
-        <link rel="stylesheet" href="css/normalize.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Roboto&display=swap"
-            rel="stylesheet"
-        />
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Roboto&display=swap" as="font" />
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Roboto&display=swap" rel="stylesheet" />
+
+        <link rel="preload" href="css/normalize.css" as="style" />
+        <link rel="stylesheet" href="css/normalize.css" />
         <link rel="preload" href="css/style.css" as="style" />
         <link rel="stylesheet" href="css/style.css" />
         <title>Antonio Moleiro</title>
@@ -21,10 +20,18 @@
     <body class="body">
         <header id="head" class="head">
             <div class="head__content container">
-                <a href="index.hetml" >
+                <a href="index.hetml">
                     <picture>
                         <source srcset="assets/img/logoAntonio.webp" type="image/webp" />
-                        <img class="head__logo" width="500" heigth="150" src="assets/img/logoAntonio.png" alt="logo antonio moleiro" class="logo__img" />
+                        <img
+                            loading="lazy"
+                            class="head__logo"
+                            width="500"
+                            heigth="150"
+                            src="assets/img/logoAntonio.png"
+                            alt="logo antonio moleiro"
+                            class="logo__img"
+                        />
                     </picture>
                 </a>
                 <div class="navigation">
@@ -35,27 +42,35 @@
                     </nav>
                 </div>
                 <button id="btnMenu" class="btn navigation__menu">
-                    <img src="assets/icons/menu.svg" alt="icono menu" width="28" height="28" />
+                    <img loading="lazy" src="assets/icons/menu.svg" alt="icono menu" width="28" height="28" />
                 </button>
             </div>
         </header>
         <div id="sideOverlay" class="navigation__overlay display-none">
             <div id="sideNav" class="navigation__side slide__out">
-                <a href="index.html" >
+                <a href="index.html">
                     <picture>
                         <source srcset="assets/img/logoAntonio.webp" type="image/webp" />
-                        <img class="side__logo" width="500" heigth="150" src="assets/img/logoAntonio.png" alt="logo antonio moleiro" class="logo__img" />
+                        <img
+                            loading="lazy"
+                            class="side__logo"
+                            width="500"
+                            heigth="150"
+                            src="assets/img/logoAntonio.png"
+                            alt="logo antonio moleiro"
+                            class="logo__img"
+                        />
                     </picture>
                 </a>
                 <nav class="navigation__bar navigation__bar-side">
                     <a href="index.html" class="navigation__link navigation__link-side active"
-                        ><img src="assets/icons/home.svg" alt="icono home" />Home</a
+                        ><img loading="lazy" src="assets/icons/home.svg" alt="icono home" />Home</a
                     >
                     <a href="projects.html" class="navigation__link navigation__link-side"
-                        ><img src="assets/icons/projects.svg" alt="icono projects" />Projects</a
+                        ><img loading="lazy" src="assets/icons/projects.svg" alt="icono projects" />Projects</a
                     >
                     <a href="contact.html" class="navigation__link navigation__link-side"
-                        ><img src="assets/icons/contact.svg" alt="icono contact" />Contact</a
+                        ><img loading="lazy" src="assets/icons/contact.svg" alt="icono contact" />Contact</a
                     >
                 </nav>
             </div>
@@ -75,7 +90,7 @@
                             <picture>
                                 <source srcset="assets/img/heroImg.avif" type="image/avif" />
                                 <source srcset="assets/img/heroImg.webp" type="image/webp" />
-                                <img width="200" heigth="300" src="assets/img/heroImg.jpg" alt="retrato Antonio Moleiro" />
+                                <img loading="lazy" width="200" heigth="300" src="assets/img/heroImg.jpg" alt="retrato Antonio Moleiro" />
                             </picture>
                         </div>
                     </div>
@@ -102,7 +117,13 @@
                             <picture>
                                 <source srcset="../assets/img/uncasual.avif" type="image/avif" />
                                 <source srcset="../assets/img/uncasual.webp" type="image/webp" />
-                                <img width="200" heigth="300" src="../assets/img/uncasual.jpg" alt="antonio moleiro estudio arquitectura" />
+                                <img
+                                    loading="lazy"
+                                    width="200"
+                                    heigth="300"
+                                    src="../assets/img/uncasual.jpg"
+                                    alt="antonio moleiro estudio arquitectura"
+                                />
                             </picture>
                         </div>
                     </div>
@@ -146,7 +167,7 @@
                             <picture>
                                 <source srcset="../assets/img/molinosSmall.avif" type="image/avif" />
                                 <source srcset="../assets/img/molinosSmall.webp" type="image/webp" />
-                                <img width="200" heigth="300" src="../assets/img/molinosSmall.jpg" alt="energía renovable" />
+                                <img loading="lazy" width="200" heigth="300" src="../assets/img/molinosSmall.jpg" alt="energía renovable" />
                             </picture>
                         </div>
                         <h2 class="motivationCard__title motivationCard__title-left">+20 años de experiencia</h2>
@@ -157,7 +178,13 @@
                             <picture>
                                 <source srcset="../assets/img/solarNaveSmall.avif" type="image/avif" />
                                 <source srcset="../assets/img/solarNaveSmall.webp" type="image/webp" />
-                                <img width="200" heigth="300" src="../assets/img/solarNaveSmall.jpg" alt="energía renovable" />
+                                <img
+                                    loading="lazy"
+                                    width="200"
+                                    heigth="300"
+                                    src="../assets/img/solarNaveSmall.jpg"
+                                    alt="energía renovable"
+                                />
                             </picture>
                         </div>
                     </div>
@@ -168,7 +195,7 @@
                             <picture>
                                 <source srcset="../assets/img/tower.avif" type="image/avif" />
                                 <source srcset="../assets/img/tower.webp" type="image/webp" />
-                                <img width="200" heigth="300" src="../assets/img/tower.jpg" alt="energía renovable" />
+                                <img loading="lazy" width="200" heigth="300" src="../assets/img/tower.jpg" alt="energía renovable" />
                             </picture>
                         </div>
                         <h2 class="motivationCard__title motivationCard__title-left">Profesionalidad</h2>
@@ -179,7 +206,13 @@
                             <picture>
                                 <source srcset="../assets/img/houseLigthSmall.avif" type="image/avif" />
                                 <source srcset="../assets/img/houseLigthSmall.webp" type="image/webp" />
-                                <img width="200" heigth="300" src="../assets/img/houseLigthSmall.jpg" alt="energía renovable" />
+                                <img
+                                    loading="lazy"
+                                    width="200"
+                                    heigth="300"
+                                    src="../assets/img/houseLigthSmall.jpg"
+                                    alt="energía renovable"
+                                />
                             </picture>
                         </div>
                     </div>
@@ -218,5 +251,6 @@
             </div>
         </footer>
         <script type="module" src="js/script.js"></script>
+        <script src="js/modernizr.js"></script>
     </body>
 </html>

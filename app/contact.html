@@ -6,14 +6,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Bienvenido a la página personal de Antonio Moleiro" />
 
-        <link rel="preload" href="css/normalize.css" as="style" />
-        <link rel="stylesheet" href="css/normalize.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin" />
+        <link
+            rel="preload"
+            href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Roboto&display=swap"
+            crossorigin="crossorigin"
+            as="font"
+        />
         <link
             href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Roboto&display=swap"
             rel="stylesheet"
         />
+        <link rel="preload" href="css/normalize.css" as="style" />
+        <link rel="stylesheet" href="css/normalize.css" />
         <link rel="preload" href="css/style.css" as="style" />
         <link rel="stylesheet" href="css/style.css" />
         <title>Antonio Moleiro</title>
@@ -24,7 +30,7 @@
                 <a href="index.html" class="head__logo">
                     <picture>
                         <source srcset="assets/img/logoAntonio.webp" type="image/webp" />
-                        <img width="500" heigth="150" src="assets/img/logoAntonio.png" alt="logo antonio moleiro" class="logo__img" />
+                        <img loading="lazy" width="500" heigth="150" src="assets/img/logoAntonio.png" alt="logo antonio moleiro" class="logo__img" />
                     </picture>
                 </a>
                 <div class="navigation">
@@ -35,7 +41,7 @@
                     </nav>
                 </div>
                 <button id="btnMenu" class="btn navigation__menu">
-                    <img src="assets/icons/menu.svg" alt="icono menu" width="28" height="28" />
+                    <img loading="lazy" src="assets/icons/menu.svg" alt="icono menu" width="28" height="28" />
                 </button>
             </div>
         </header>
@@ -44,18 +50,18 @@
                 <a href="index.html" >
                     <picture>
                         <source srcset="assets/img/logoAntonio.webp" type="image/webp" />
-                        <img class="side__logo" width="500" heigth="150" src="assets/img/logoAntonio.png" alt="logo antonio moleiro" class="logo__img" />
+                        <img loading="lazy" class="side__logo" width="500" heigth="150" src="assets/img/logoAntonio.png" alt="logo antonio moleiro" class="logo__img" />
                     </picture>
                 </a>
                 <nav class="navigation__bar navigation__bar-side">
                     <a href="index.html" class="navigation__link navigation__link-side"
-                        ><img src="assets/icons/home.svg" alt="icono home" />Home</a
+                        ><img loading="lazy" src="assets/icons/home.svg" alt="icono home" />Home</a
                     >
                     <a href="projects.html " class="navigation__link navigation__link-side "
-                        ><img src="assets/icons/projects.svg" alt="icono projects" />Projects</a
+                        ><img loading="lazy" src="assets/icons/projects.svg" alt="icono projects" />Projects</a
                     >
                     <a href="contact.html" class="navigation__link navigation__link-side active"
-                        ><img src="assets/icons/contact.svg" alt="icono contact active" />Contact</a
+                        ><img loading="lazy" src="assets/icons/contact.svg" alt="icono contact active" />Contact</a
                     >
                 </nav>
             </div>
@@ -67,17 +73,17 @@
             <section class="information">
                 <div class="information__box container">
                     <div class="information__way">
-                        <div class="information__logo"><img src="assets/icons/phone.svg" alt=""></div>
+                        <div class="information__logo"><img loading="lazy" src="assets/icons/phone.svg" alt=""></div>
                         <h3 class="information__title">Teléfono</h3>
                         <p class="information__text font-secondary">Puedes llamarme de 9:00 - 18:00 al <a href="tel:654654654">654654654</a></p>
                     </div>
                     <div class="information__way">
-                        <div class="information__logo"><img src="assets/icons/email.svg" alt=""></div>
+                        <div class="information__logo"><img loading="lazy" src="assets/icons/email.svg" alt=""></div>
                         <h3 class="information__title">Email</h3>
                         <p class="information__text font-secondary">Envíame un email a <a href="mailto:antonio@moleiro.es font">antonio@moleiro.es</a></p>
                     </div>
                     <div class="information__way">
-                        <div class="information__logo"><img src="assets/icons/address.svg" alt="address icon"></div>
+                        <div class="information__logo"><img loading="lazy" src="assets/icons/address.svg" alt="address icon"></div>
                         <h3 class="information__title">Direccíon</h3>
                         <address class="information__text font-secondary">C/ Camino de los labajos, nave 7, Nº 14, 28440 Guadarrama, Madrid.</address>
                     </div>
@@ -89,7 +95,7 @@
                         <picture>
                             <source srcset="assets/img/contact.avif" type="image/avif">
                             <source srcset="assets/img/contact.webp" type="image/webp">
-                            <img class="contact__img" width ="200" heigth="300" src="assets/img/contact.jpg" alt="mail box" />
+                            <img loading="lazy" class="contact__img" width ="200" heigth="300" src="assets/img/contact.jpg" alt="mail box" />
                         </picture>
                     </div>
                 <div class="contact__formBox">
