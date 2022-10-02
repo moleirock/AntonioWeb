@@ -14,8 +14,6 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
 }
 
 *,
@@ -221,10 +219,6 @@ li {
     }
 }
 @media (max-width: 768px) {
-    .hero {
-        scroll-snap-stop: normal;
-        scroll-snap-align: center;
-    }
     .hero__content {
         height: auto;
     }
@@ -269,7 +263,7 @@ li {
     text-align: center;
     line-height: 1.6;
 }
-.about__info p {
+.about__text{
     font-family: var(--font-secondary);
     text-align: left;
     padding: 1rem;
@@ -291,7 +285,7 @@ li {
     .about__info {
         width: 95%;
     }
-    .about__info p {
+    .about__text {
         width: unset;
         text-align: center;
         float: unset;
@@ -325,10 +319,6 @@ li {
     text-align: center;
 }
 @media (max-width: 768px) {
-    .presentation {
-        scroll-snap-stop: normal;
-        scroll-snap-align: center;
-    }
     .presentation__content {
         flex-direction: column-reverse;
         align-items: center;
@@ -375,10 +365,6 @@ li {
 }
 
 @media (max-width: 768px) {
-    .achieve {
-        scroll-snap-stop: normal;
-        scroll-snap-align: center;
-    }
     .achieve__info {
         width: 50%;
     }
@@ -434,10 +420,6 @@ li {
     text-align: center;
 }
 @media (max-width: 768px) {
-    .motivation {
-        scroll-snap-stop: normal;
-        scroll-snap-align: center;
-    }
     .motivation__content {
         flex-direction: column;
         align-items: center;
@@ -497,10 +479,6 @@ li {
 }
 
 @media (max-width: 768px) {
-    .footer {
-        scroll-snap-stop: normal;
-        scroll-snap-align: end;
-    }
     .footer__info {
         flex-direction: column;
         align-items: center;
@@ -528,8 +506,6 @@ li {
     .pageTitle {
         border-bottom-left-radius: 20%;
         border-bottom-right-radius: 20%;
-        scroll-snap-stop: always;
-        scroll-snap-align: start;
     }
 }
 
@@ -591,8 +567,6 @@ ul {
         align-items: center;
         padding-top: 1rem;
         background: linear-gradient(transparent 20%, var(--color-primary) 20% 100%);
-        scroll-snap-stop: always;
-        scroll-snap-align: start;
     }
     .project__imgBox {
         width: 95%;
@@ -646,8 +620,6 @@ ul {
 @media (max-width: 768px) {
     .information__box {
         flex-direction: column;
-        scroll-snap-stop: normal;
-        scroll-snap-align: start;
     }
 }
 
@@ -722,10 +694,6 @@ textarea {
 }
 
 @media (max-width: 1000px) {
-    .contact {
-        scroll-snap-stop: normal;
-        scroll-snap-align: start;
-    }
     .contact__box {
         flex-direction: column-reverse;
         padding: 1rem;
