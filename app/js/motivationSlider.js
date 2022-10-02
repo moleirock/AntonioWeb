@@ -1,6 +1,6 @@
 const timeInterval = 9500;
 const timeTransition = 2000;
-const timeTransitionDelay = 2050;
+const timeTransitionDelay = 2100;
 
 export const motivationSlider = () => {
     setInterval(slide, timeInterval);

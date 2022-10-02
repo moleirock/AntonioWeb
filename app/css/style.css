@@ -406,11 +406,11 @@ li {
     background: linear-gradient(transparent 30%, var(--color-primary) 30%) no-repeat;
 }
 
-.motivationCard__img {
+.motivationCard__imgBox {
     width: 80%;
     margin: 0 auto;
 }
-.motivationCard__img img {
+.motivationCard__img{
     width: 100%;
     box-shadow: 0 0 3rem var(--color-secondary);
     border-radius: 1rem;
@@ -541,12 +541,11 @@ li {
     flex-direction: column;
     justify-content: flex-end;
 }
-.project__info p,
-ul {
+.project__text {
     margin-bottom: 2rem;
     font-family: var(--font-secondary);
 }
-.project__info ul > li {
+.project__text > li {
     list-style: inside;
 }
 .project__btn {
@@ -610,11 +609,11 @@ ul {
 .information__text {
     font-size: 2.4rem;
 }
-.information__text a {
+.information__link {
     font-weight: 700;
     text-decoration: underline;
 }
-.information__text a:hover {
+.information__link:hover {
     color: var(--color-primary);
 }
 @media (max-width: 768px) {
@@ -673,7 +672,7 @@ ul {
     display: block;
     margin-bottom: 0.5rem;
 }
-.field a {
+.field__link {
     text-decoration: underline;
 }
 .input-text {
@@ -685,7 +684,7 @@ ul {
     font-family: var(--font-secondary);
     font-size: 2rem;
 }
-textarea {
+.input-text--area {
     resize: none;
 }
 .contact__btn {
