@@ -35,9 +35,9 @@
                 </a>
                 <div class="navigation">
                     <nav class="navigation__bar">
-                        <a href="index.html" class="navigation__link active">Home</a>
-                        <a href="projects.html" class="navigation__link">Proyectos</a>
-                        <a href="contact.html" class="navigation__link">Contacto</a>
+                        <a href="#hero" class="navigation__link active">Home</a>
+                        <a href="#projects" class="navigation__link">Proyectos</a>
+                        <a href="#contact" class="navigation__link">Contacto</a>
                     </nav>
                 </div>
                 <button id="btnMenu" class="btn navigation__menu">
@@ -65,17 +65,17 @@
                     <a href="index.html" class="navigation__link navigation__link-side active"
                         ><img loading="lazy" src="assets/icons/home.svg" alt="icono home" width="28" height="28" />Home</a
                     >
-                    <a href="projects.html" class="navigation__link navigation__link-side"
+                    <a href="#projects" class="navigation__link navigation__link-side"
                         ><img loading="lazy" src="assets/icons/projects.svg" alt="icono projects" width="28" height="28" />Projects</a
                     >
-                    <a href="contact.html" class="navigation__link navigation__link-side"
+                    <a href="#contact" class="navigation__link navigation__link-side"
                         ><img loading="lazy" src="assets/icons/contact.svg" alt="icono contact" width="28" height="28" />Contact</a
                     >
                 </nav>
             </div>
         </div>
         <main>
-            <section class="hero">
+            <section id="hero" class="hero">
                 <article class="hero__content container">
                     <div class="hero__box">
                         <div class="hero__boxTitle">
@@ -159,79 +159,167 @@
                     </article>
                 </div>
             </section>
-            <section class="motivation">
-                <div class="motivation__content container">
-                    <article class="motivation__card">
-                        <div class="motivationCard__imgBox">
-                            <picture>
-                                <source srcset="../assets/img/molinosSmall.avif" type="image/avif" />
-                                <source srcset="../assets/img/molinosSmall.webp" type="image/webp" />
-                                <img
-                                    loading="lazy"
-                                    width="640"
-                                    heigth="427"
-                                    src="../assets/img/molinosSmall.jpg"
-                                    alt="energía renovable"
-                                    class="motivationCard__img"
-                                />
-                            </picture>
+            <section id="projects" class="projects">
+                <div class="sectionTitle"><h2>Proyectos</h2></div>
+                <article class="project">
+                    <article class="project__box container">
+                        <div class="project__imgBox">
+                            <video class="project__video" muted poster="assets/img/solarSmall.webp">
+                                <source src="assets/video/solarSmall.mp4" type="video/mp4" />
+                                <source src="assets/video/solarSmall.ogv" type="video/ogg" />
+                                <source src="assets/video/solarSmall.webm" type="video/webm" />
+                                Su navegador no soporta este formato de vídeo.
+                            </video>
                         </div>
-                        <h2 class="motivationCard__title">+20 años de experiencia</h2>
-                    </article>
-                    <article class="motivation__card motivation__card-right">
-                        <div class="motivationCard__imgBox">
-                            <h2 class="motivationCard__title motivationCard__title-right">Compromiso</h2>
-                            <picture>
-                                <source srcset="../assets/img/solarNaveSmall.avif" type="image/avif" />
-                                <source srcset="../assets/img/solarNaveSmall.webp" type="image/webp" />
-                                <img
-                                    loading="lazy"
-                                    width="640"
-                                    heigth="433"
-                                    src="../assets/img/solarNaveSmall.jpg"
-                                    alt="energía renovable"
-                                    class="motivationCard__img"
-                                />
-                            </picture>
+                        <div class="project__info">
+                            <h2 class="project__title">Proyecto el primero</h2>
+                            <p class="project__text">
+                                Este es un bonito proyecto hecho en una casa para personas, personas que necesitan ver de noche y calentar el
+                                café por la mañana.
+                            </p>
+                            <ul class="project__text">
+                                <li>7000kw de instalación solar.</li>
+                                <li>Cosas técnicas.</li>
+                                <li>Más cosas técnicas</li>
+                                <li>Y que sé yo.</li>
+                            </ul>
+                            <button class="btn btn-black project__btn">Más Información</button>
                         </div>
                     </article>
-                </div>
-                <div class="motivation__content container display-none">
-                    <article class="motivation__card">
-                        <div class="motivationCard__imgBox">
-                            <picture>
-                                <source srcset="../assets/img/tower.avif" type="image/avif" />
-                                <source srcset="../assets/img/tower.webp" type="image/webp" />
-                                <img
-                                    loading="lazy"
-                                    width="640"
-                                    heigth="429"
-                                    src="../assets/img/tower.jpg"
-                                    alt="energía renovable"
-                                    class="motivationCard__img"
-                                />
-                            </picture>
+                </article>
+                <article class="project">
+                    <article class="project__box container">
+                        <div class="project__imgBox">
+                            <video class="project__video" muted poster="assets/img/ligthsFall.webp">
+                                <source src="assets/video/ligthsFalls.mp4" type="video/mp4" />
+                                <source src="assets/video/ligthsFalls.ogv" type="video/ogg" />
+                                <source src="assets/video/ligthsFalls.webm" type="video/webm" />
+                                Su navegador no soporta este formato de vídeo.
+                            </video>
                         </div>
-                        <h2 class="motivationCard__title">Profesionalidad</h2>
-                    </article>
-                    <article class="motivation__card motivation__card-right">
-                        <div class="motivationCard__imgBox">
-                            <h2 class="motivationCard__title motivationCard__title-right">Elegancia</h2>
-                            <picture>
-                                <source srcset="../assets/img/houseLigthSmall.avif" type="image/avif" />
-                                <source srcset="../assets/img/houseLigthSmall.webp" type="image/webp" />
-                                <img
-                                    loading="lazy"
-                                    width="640"
-                                    heigth="430"
-                                    src="../assets/img/houseLigthSmall.jpg"
-                                    alt="energía renovable"
-                                    class="motivationCard__img"
-                                />
-                            </picture>
+                        <div class="project__info">
+                            <h2 class="project__title">Proyecto el segundo</h2>
+                            <p class="project__text">
+                                Este es un bonito proyecto hecho en una casa para personas, personas que necesitan ver de noche y calentar el
+                                café por la mañana.
+                            </p>
+                            <ul class="project__text">
+                                <li>7000kw de instalación solar.</li>
+                                <li>Cosas técnicas.</li>
+                                <li>Más cosas técnicas</li>
+                                <li>Y que sé yo.</li>
+                            </ul>
+                            <button class="btn btn-black project__btn">Más Información</button>
                         </div>
                     </article>
-                </div>
+                </article>
+                <article class="project">
+                    <article class="project__box container">
+                        <div class="project__imgBox">
+                            <video class="project__video" muted poster="assets/img/solarNaveSmall.webp">
+                                <source src="assets/video/solarPark.mp4" type="video/mp4" />
+                                <source src="assets/video/solarPark.ogv" type="video/ogg" />
+                                <source src="assets/video/solarPark.webm" type="video/webm" />
+                                Su navegador no soporta este formato de vídeo.
+                            </video>
+                        </div>
+                        <div class="project__info">
+                            <h2 class="project__title">Proyecto el tercero</h2>
+                            <p class="project__text">
+                                Este es un bonito proyecto hecho en una casa para personas, personas que necesitan ver de noche y calentar el
+                                café por la mañana.
+                            </p>
+                            <ul class="project__text">
+                                <li>7000kw de instalación solar.</li>
+                                <li>Cosas técnicas.</li>
+                                <li>Más cosas técnicas</li>
+                                <li>Y que sé yo.</li>
+                            </ul>
+                            <button class="btn btn-black project__btn">Más Información</button>
+                        </div>
+                    </article>
+                </article>
+            </section>
+            <section id="contact" class="informationContact">
+                <div class="sectionTitle"><h2>Contacto</h2></div>
+                <article class="information">
+                    <div class="information__box container">
+                        <div class="information__way">
+                            <div class="information__logo">
+                                <img loading="lazy" src="assets/icons/phone.svg" alt="phone icon" width="48" height="48" />
+                            </div>
+                            <h3 class="information__title">Teléfono</h3>
+                            <p class="information__text font-secondary">
+                                Puedes llamarme de 9:00 - 18:00 al <a class="information__link" href="tel:654654654">654654654</a>
+                            </p>
+                        </div>
+                        <div class="information__way">
+                            <div class="information__logo">
+                                <img loading="lazy" src="assets/icons/email.svg" alt="email icon" width="48" height="48" />
+                            </div>
+                            <h3 class="information__title">Email</h3>
+                            <p class="information__text font-secondary">
+                                Envíame un email a <a class="information__link" href="mailto:antonio@moleiro.es font">antonio@moleiro.es</a>
+                            </p>
+                        </div>
+                        <div class="information__way">
+                            <div class="information__logo">
+                                <img loading="lazy" src="assets/icons/address.svg" alt="address icon" width="48" height="48" />
+                            </div>
+                            <h3 class="information__title">Dirección</h3>
+                            <address class="information__text font-secondary">
+                                C/ Camino de los labajos, nave 7, Nº 14, 28440 Guadarrama, Madrid.
+                            </address>
+                        </div>
+                    </div>
+                </article>
+                <article class="contact">
+                    <div class="contact__box container">
+                        <div class="contact__imgBox">
+                            <picture>
+                                <source srcset="assets/img/contact.avif" type="image/avif" />
+                                <source srcset="assets/img/contact.webp" type="image/webp" />
+                                <img class="contact__img" width="640" heigth="427" src="assets/img/contact.jpg" alt="mail box" />
+                            </picture>
+                        </div>
+                        <div class="contact__formBox">
+                            <form action="" class="contact__form">
+                                <fieldset class="contact__fieldset">
+                                    <legend class="contact__legend">Contacto</legend>
+                                    <div class="fields">
+                                        <div class="field">
+                                            <label>Nombre </label> <input class="input-text" type="text" name="name" placeholder="Nombre" />
+                                        </div>
+                                        <div class="field">
+                                            <label>Teléfono </label> <input class="input-text" type="tel" name="phone" placeholder="Teléfono" />
+                                        </div>
+                                        <div class="field">
+                                            <label>Email </label> <input class="input-text" type="email" name="email" placeholder="E-mail" />
+                                        </div>
+                                        <div class="field">
+                                            <label>Mensaje </label
+                                            ><textarea
+                                                class="input-text input-text--area"
+                                                name="message"
+                                                cols="30"
+                                                rows="10"
+                                                placeholder="¡Envíame un email!"
+                                            ></textarea>
+                                        </div>
+                                        <div class="field">
+                                            <label
+                                                ><input type="checkbox" /><small>
+                                                    Acepto la <a class="field__link" href="#">política de privacidad</a></small
+                                                ></label
+                                            >
+                                        </div>
+                                    </div>
+                                    <button class="contact__btn btn btn-black" type="submit">Enviar</button>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </article>
             </section>
         </main>
         <footer class="footer">

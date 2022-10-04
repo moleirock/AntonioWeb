@@ -14,6 +14,7 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -95,6 +96,18 @@ li {
 .btn-black:hover {
     background-color: var(--color-secondary);
     color: var(--color-primary);
+}
+
+.sectionTitle {
+    color: var(--color-secondary);
+    background-color: var(--color-white);
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 3rem;
+    box-shadow: 0rem 0 1rem var(--color-secondary);
+}
+.sectionTitle h2 {
+    font-size: 5rem;
 }
 /* HEADER */
 
@@ -336,8 +349,6 @@ li {
 /*  ACHIEVE*/
 .achieve {
     background-color: var(--color-secondary-opacity50);
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
 }
 .achieve__content {
     display: flex;
@@ -353,6 +364,7 @@ li {
     width: 30%;
     height: 80%;
     padding: 2rem 1rem;
+    text-shadow: 0px 0px 5px var(--color-secondary);
 }
 .achieve__info:nth-child(2) {
     border-left: var(--color-white) solid 3px;
@@ -495,22 +507,13 @@ li {
 }
 
 /* PROJECTS */
-.pageTitle {
-    padding-top: 3rem;
-    color: var(--color-secondary);
-    background-color: var(--color-primary);
-    text-align: center;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    box-shadow: 0 0 1rem var(--color-secondary);
+.projects {
+    background-color: #eceae7;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23e3a14c' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23a17236' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23bc9d4f' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%238f683a' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%239b9558' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%237c5f3d' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23828a62' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%236a5640' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23727c69' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23574d42' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%236b6c6b' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23444444' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    padding-bottom: 3rem;
 }
-@media (max-width: 500px) {
-    .pageTitle {
-        border-bottom-left-radius: 20%;
-        border-bottom-right-radius: 20%;
-    }
-}
-
 .project__box {
     background: linear-gradient(transparent 20%, var(--color-primary) 20% 100%) right bottom / 90% 100%;
     background-repeat: no-repeat;
@@ -579,6 +582,10 @@ li {
 }
 
 /* CONTACT */
+.informationContact{
+    background-color: var(--color-white);
+    padding-bottom: 3rem;
+}
 .information__box {
     display: flex;
     justify-content: space-evenly;
