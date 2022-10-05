@@ -1,11 +1,12 @@
 let options = {
     rootMargin: "100px",
-    threshold: 0.35,
+    threshold: .35,
 };
 
 const ob = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.target.id == "home" && entry.isIntersecting) {
+    entries.forEach((entry)=>{
+        if(home.getBoundingClientRect().y>=entry.boundingClientRect.y && entry.isIntersecting){
+            
             homeNav.classList.add("active");
             projectsNav.classList.remove("active");
             contactNav.classList.remove("active");
@@ -13,7 +14,8 @@ const ob = new IntersectionObserver((entries) => {
             homeSide.classList.add("active");
             projectsSide.classList.remove("active");
             contactSide.classList.remove("active");
-        } else if (entry.target.id == "projects" && entry.isIntersecting) {
+        }else if(projects.getBoundingClientRect().y>=entry.boundingClientRect.y && entry.isIntersecting){
+            
             projectsNav.classList.add("active");
             homeNav.classList.remove("active");
             contactNav.classList.remove("active");
@@ -21,7 +23,7 @@ const ob = new IntersectionObserver((entries) => {
             projectsSide.classList.add("active");
             homeSide.classList.remove("active");
             contactSide.classList.remove("active");
-        } else if (entry.target.id == "contact" && entry.isIntersecting) {
+        }else if(contact.getBoundingClientRect().y>=entry.boundingClientRect.y && entry.isIntersecting){
             contactNav.classList.add("active");
             homeNav.classList.remove("active");
             projectsNav.classList.remove("active");
@@ -30,11 +32,15 @@ const ob = new IntersectionObserver((entries) => {
             homeSide.classList.remove("active");
             projectsSide.classList.remove("active");
         }
-    });
+
+    })
+    
+    
 }, options);
+
 
 export const turnOnLink = () => {
     ob.observe(home);
-    ob.observe(projects);
-    ob.observe(contact);
+    ob.observe(projects); 
+    ob.observe(contact); 
 };
