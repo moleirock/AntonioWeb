@@ -35,9 +35,9 @@
                 </a>
                 <div class="navigation">
                     <nav class="navigation__bar">
-                        <a href="#hero" class="navigation__link active">Home</a>
-                        <a href="#projects" class="navigation__link">Proyectos</a>
-                        <a href="#contact" class="navigation__link">Contacto</a>
+                        <a href="#hero" class="navigation__link" id="homeNav">Home</a>
+                        <a href="#projects" class="navigation__link" id="projectsNav">Proyectos</a>
+                        <a href="#contact" class="navigation__link" id="contactNav">Contacto</a>
                     </nav>
                 </div>
                 <button id="btnMenu" class="btn navigation__menu">
@@ -62,102 +62,104 @@
                     </picture>
                 </a>
                 <nav class="navigation__bar navigation__bar-side">
-                    <a href="index.html" class="navigation__link navigation__link-side active"
+                    <a href="index.html" class="navigation__link navigation__link-side" id="homeSide"
                         ><img loading="lazy" src="assets/icons/home.svg" alt="icono home" width="28" height="28" />Home</a
                     >
-                    <a href="#projects" class="navigation__link navigation__link-side"
-                        ><img loading="lazy" src="assets/icons/projects.svg" alt="icono projects" width="28" height="28" />Projects</a
+                    <a href="#projects" class="navigation__link navigation__link-side" id="projectsSide"
+                        ><img loading="lazy" src="assets/icons/projects.svg" alt="icono projects" width="28" height="28" />Proyectos</a
                     >
-                    <a href="#contact" class="navigation__link navigation__link-side"
-                        ><img loading="lazy" src="assets/icons/contact.svg" alt="icono contact" width="28" height="28" />Contact</a
+                    <a href="#contact" class="navigation__link navigation__link-side" id="contactSide"
+                        ><img loading="lazy" src="assets/icons/contact.svg" alt="icono contact" width="28" height="28" />Contacto</a
                     >
                 </nav>
             </div>
         </div>
         <main>
-            <section id="hero" class="hero">
-                <article class="hero__content container">
-                    <div class="hero__box">
-                        <div class="hero__boxTitle">
-                            <h1 class="hero__title">
-                                <span class="font-size-36 color-white">Soy</span> <br />
-                                Antonio Moleiro
-                            </h1>
-                            <button id="btnAbout" class="btn btn-black">Conóceme</button>
+            <section id="home" class="home">
+                <section id="hero" class="hero">
+                    <article class="hero__content container">
+                        <div class="hero__box">
+                            <div class="hero__boxTitle">
+                                <h1 class="hero__title">
+                                    <span class="font-size-36 color-white">Soy</span> <br />
+                                    Antonio Moleiro
+                                </h1>
+                                <button id="btnAbout" class="btn btn-black">Conóceme</button>
+                            </div>
+                            <div class="hero__img">
+                                <picture>
+                                    <source srcset="assets/img/heroImg.avif" type="image/avif" />
+                                    <source srcset="assets/img/heroImg.webp" type="image/webp" />
+                                    <img width="640" heigth="959" src="assets/img/heroImg.jpg" alt="retrato Antonio Moleiro" />
+                                </picture>
+                            </div>
                         </div>
-                        <div class="hero__img">
-                            <picture>
-                                <source srcset="assets/img/heroImg.avif" type="image/avif" />
-                                <source srcset="assets/img/heroImg.webp" type="image/webp" />
-                                <img width="640" heigth="959" src="assets/img/heroImg.jpg" alt="retrato Antonio Moleiro" />
-                            </picture>
+                    </article>
+                </section>
+                <section id="about" class="about display-none">
+                    <article class="about__info">
+                        <h2 class="about__title">Sobre Mí</h2>
+                        <p class="about__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis in praesentium aliquam vitae aspernatur optio
+                            iste, ab magnam ut explicabo. Sed ut nulla a architecto mollitia? Nemo neque aperiam debitis?
+                        </p>
+                        <p class="about__text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, aliquid corporis. Libero, obcaecati. Saepe expedita
+                            explicabo, praesentium culpa aut asperiores possimus vel id quos repudiandae iure repellat, vitae amet quidem?
+                        </p>
+                        <button class="btn btn-closeAbout">X</button>
+                    </article>
+                </section>
+                <section class="presentation">
+                    <article class="presentation__content container">
+                        <div class="presentation__boxImg">
+                            <div class="presentation__img">
+                                <picture>
+                                    <source srcset="../assets/img/uncasual.avif" type="image/avif" />
+                                    <source srcset="../assets/img/uncasual.webp" type="image/webp" />
+                                    <img
+                                        loading="lazy"
+                                        width="640"
+                                        heigth="427"
+                                        src="../assets/img/uncasual.jpg"
+                                        alt="antonio moleiro estudio arquitectura"
+                                    />
+                                </picture>
+                            </div>
                         </div>
-                    </div>
-                </article>
-            </section>
-            <section id="about" class="about display-none">
-                <article class="about__info">
-                    <h2 class="about__title">Sobre Mí</h2>
-                    <p class="about__text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis in praesentium aliquam vitae aspernatur optio
-                        iste, ab magnam ut explicabo. Sed ut nulla a architecto mollitia? Nemo neque aperiam debitis?
-                    </p>
-                    <p class="about__text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, aliquid corporis. Libero, obcaecati. Saepe expedita
-                        explicabo, praesentium culpa aut asperiores possimus vel id quos repudiandae iure repellat, vitae amet quidem?
-                    </p>
-                    <button class="btn btn-closeAbout">X</button>
-                </article>
-            </section>
-            <section class="presentation">
-                <article class="presentation__content container">
-                    <div class="presentation__boxImg">
-                        <div class="presentation__img">
-                            <picture>
-                                <source srcset="../assets/img/uncasual.avif" type="image/avif" />
-                                <source srcset="../assets/img/uncasual.webp" type="image/webp" />
-                                <img
-                                    loading="lazy"
-                                    width="640"
-                                    heigth="427"
-                                    src="../assets/img/uncasual.jpg"
-                                    alt="antonio moleiro estudio arquitectura"
-                                />
-                            </picture>
+                        <div class="presentation__info">
+                            <h2 class="presentation__title">Experto en instalaciones de energía solar y domótica</h2>
                         </div>
+                    </article>
+                </section>
+                <section id="achieve" class="achieve">
+                    <div class="achieve__content container">
+                        <article class="achieve__info">
+                            <h3 class="achieve__title">Tecnologías</h3>
+                            <ul>
+                                <li class="achieve__text">«Cosas con luces»</li>
+                                <li class="achieve__text">«Cosas que se mueven»</li>
+                                <li class="achieve__text">«Audio y de más»</li>
+                            </ul>
+                        </article>
+                        <article class="achieve__info">
+                            <h3 class="achieve__title">Logros</h3>
+                            <ul>
+                                <li class="achieve__text">«46 Instalaciones»</li>
+                                <li class="achieve__text">«23 Trabajos»</li>
+                                <li class="achieve__text">«14 variedades»</li>
+                            </ul>
+                        </article>
+                        <article class="achieve__info">
+                            <h3 class="achieve__title">Experiencias</h3>
+                            <ul>
+                                <li class="achieve__text">«Saltar a la comba»</li>
+                                <li class="achieve__text">«Mirarse al espejo»</li>
+                                <li class="achieve__text">«Freír un huevo»</li>
+                            </ul>
+                        </article>
                     </div>
-                    <div class="presentation__info">
-                        <h2 class="presentation__title">Experto en instalaciones de energía solar y domótica</h2>
-                    </div>
-                </article>
-            </section>
-            <section class="achieve">
-                <div class="achieve__content container">
-                    <article class="achieve__info">
-                        <h3 class="achieve__title">Tecnologías</h3>
-                        <ul>
-                            <li class="achieve__text">«Cosas con luces»</li>
-                            <li class="achieve__text">«Cosas que se mueven»</li>
-                            <li class="achieve__text">«Audio y de más»</li>
-                        </ul>
-                    </article>
-                    <article class="achieve__info">
-                        <h3 class="achieve__title">Logros</h3>
-                        <ul>
-                            <li class="achieve__text">«46 Instalaciones»</li>
-                            <li class="achieve__text">«23 Trabajos»</li>
-                            <li class="achieve__text">«14 variedades»</li>
-                        </ul>
-                    </article>
-                    <article class="achieve__info">
-                        <h3 class="achieve__title">Experiencias</h3>
-                        <ul>
-                            <li class="achieve__text">«Saltar a la comba»</li>
-                            <li class="achieve__text">«Mirarse al espejo»</li>
-                            <li class="achieve__text">«Freír un huevo»</li>
-                        </ul>
-                    </article>
-                </div>
+                </section>
             </section>
             <section id="projects" class="projects">
                 <div class="sectionTitle"><h2>Proyectos</h2></div>
@@ -174,8 +176,8 @@
                         <div class="project__info">
                             <h2 class="project__title">Proyecto el primero</h2>
                             <p class="project__text">
-                                Este es un bonito proyecto hecho en una casa para personas, personas que necesitan ver de noche y calentar el
-                                café por la mañana.
+                                Este es un bonito proyecto hecho en una casa para personas, personas que necesitan ver de noche y calentar
+                                el café por la mañana.
                             </p>
                             <ul class="project__text">
                                 <li>7000kw de instalación solar.</li>
@@ -200,8 +202,8 @@
                         <div class="project__info">
                             <h2 class="project__title">Proyecto el segundo</h2>
                             <p class="project__text">
-                                Este es un bonito proyecto hecho en una casa para personas, personas que necesitan ver de noche y calentar el
-                                café por la mañana.
+                                Este es un bonito proyecto hecho en una casa para personas, personas que necesitan ver de noche y calentar
+                                el café por la mañana.
                             </p>
                             <ul class="project__text">
                                 <li>7000kw de instalación solar.</li>
@@ -226,8 +228,8 @@
                         <div class="project__info">
                             <h2 class="project__title">Proyecto el tercero</h2>
                             <p class="project__text">
-                                Este es un bonito proyecto hecho en una casa para personas, personas que necesitan ver de noche y calentar el
-                                café por la mañana.
+                                Este es un bonito proyecto hecho en una casa para personas, personas que necesitan ver de noche y calentar
+                                el café por la mañana.
                             </p>
                             <ul class="project__text">
                                 <li>7000kw de instalación solar.</li>
@@ -291,10 +293,12 @@
                                             <label>Nombre </label> <input class="input-text" type="text" name="name" placeholder="Nombre" />
                                         </div>
                                         <div class="field">
-                                            <label>Teléfono </label> <input class="input-text" type="tel" name="phone" placeholder="Teléfono" />
+                                            <label>Teléfono </label>
+                                            <input class="input-text" type="tel" name="phone" placeholder="Teléfono" />
                                         </div>
                                         <div class="field">
-                                            <label>Email </label> <input class="input-text" type="email" name="email" placeholder="E-mail" />
+                                            <label>Email </label>
+                                            <input class="input-text" type="email" name="email" placeholder="E-mail" />
                                         </div>
                                         <div class="field">
                                             <label>Mensaje </label

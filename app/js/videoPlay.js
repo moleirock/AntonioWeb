@@ -6,7 +6,7 @@ let options = {
     threshold: 1.0,
 };
 
-const ob = new IntersectionObserver((entries,options) => {
+const ob = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.play();
@@ -19,12 +19,7 @@ const ob = new IntersectionObserver((entries,options) => {
 export const playVideo = () => {
     for (const video of videos) {
             ob.observe(video);
-            video.addEventListener("touchstart", () => {
-                video.pause();
-            });
-            video.addEventListener("touchend", () => {
-                video.play();
-            });
+          
             video.addEventListener("mouseover", () => {
                 video.pause();
             });
