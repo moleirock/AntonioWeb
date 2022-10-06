@@ -44,7 +44,7 @@ a {
     color: unset;
 }
 h1 {
-    font-size: 5rem;
+    font-size: 4.6rem;
 }
 h2 {
     font-size: 3.6rem;
@@ -110,7 +110,7 @@ li {
     box-shadow: 0rem 0 1rem var(--color-secondary);
 }
 .sectionTitle h2 {
-    font-size: 5rem;
+    font-size: 4.4rem;
 }
 /* HEADER */
 
@@ -295,7 +295,7 @@ li {
     right: 1rem;
     width: 4rem;
     height: 4rem;
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: var(--font-secondary);
     font-weight: 400;
     color: var(--color-white);
@@ -381,7 +381,7 @@ li {
     padding: 2rem 0;
 }
 .achieve__text {
-    font-size: 2.4rem;
+    font-size: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -391,12 +391,7 @@ li {
     .achieve__info:nth-child(3) {
         border: unset;
     }
-    .achieve__title {
-        font-size: 2.4rem;
-    }
-    .achieve__text {
-        font-size: 1.8rem;
-    }
+   
 }
 @media (max-width: 500px) {
     .achieve__info {
@@ -442,7 +437,6 @@ li {
     width: 100%;
     padding: 9rem 1rem 0rem 2rem;
     line-height: 1.4;
-    font-size: 2rem;
     font-weight: 700;
     display: flex;
     flex-direction: column;
@@ -518,7 +512,7 @@ li {
     margin-bottom: 2rem;
 }
 .information__text {
-    font-size: 2.4rem;
+    font-size: 2rem;
 }
 .information__link {
     font-weight: 700;
@@ -578,7 +572,7 @@ li {
     grid-column: 1/3;
 }
 .field label {
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: 700;
     display: block;
     margin-bottom: 0.5rem;
@@ -593,7 +587,7 @@ li {
     padding: 0.5rem;
     background-color: var(--color-white);
     font-family: var(--font-secondary);
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 .input-text--area {
     resize: none;
