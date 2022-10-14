@@ -258,8 +258,8 @@ li {
         width: 80%;
     }
 }
-/* ABOUT */
-.about {
+/* MODAL WINDOW */
+.modal {
     position: fixed;
     top: 0;
     left: 0;
@@ -269,13 +269,13 @@ li {
     background-color: var(--color-secondary-opacityLess);
     backdrop-filter: blur(3px);
 }
-.about__info {
+.modal__info {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: min(70%, 100rem);
-    background-color: var(--color-primary-opacityLess);
+    background-color: var(--color-white);
     backdrop-filter: blur(3px);
     color: var(--color-secondary);
     border-radius: 1rem;
@@ -283,17 +283,17 @@ li {
     text-align: center;
     line-height: 1.6;
 }
-.about__text {
+.modal__text {
     font-family: var(--font-secondary);
     text-align: left;
     padding: 1rem;
 }
-.btn-closeAbout {
+.btn-closeModal {
     position: absolute;
     top: 1rem;
     right: 1rem;
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     font-size: 2rem;
     font-family: var(--font-secondary);
     font-weight: 400;
@@ -302,10 +302,10 @@ li {
     border-radius: 50%;
 }
 @media (max-width: 768px) {
-    .about__info {
+    .modal__info {
         width: 95%;
     }
-    .about__text {
+    .modal__text {
         width: unset;
         text-align: center;
         float: unset;
@@ -453,14 +453,14 @@ li {
     width: max-content;
     margin: 0rem 2rem 2rem 1rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .project__btn {
         align-self: center;
         width: 80%;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .project__box {
         flex-direction: column;
         align-items: center;
