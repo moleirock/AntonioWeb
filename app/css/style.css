@@ -100,7 +100,7 @@ li {
     color: var(--color-primary);
 }
 
-.sectionTitle {
+.section-title {
     color: var(--color-secondary);
     background-color: var(--color-white);
     text-align: center;
@@ -108,7 +108,7 @@ li {
     margin-bottom: 3rem;
     box-shadow: 0rem 0 1rem var(--color-secondary);
 }
-.sectionTitle h2 {
+.section-title h2 {
     font-size: 4.4rem;
 }
 /* HEADER */
@@ -162,7 +162,7 @@ li {
     }
 }
 
-/* side navigation */
+/* SIDE NAVIGATION */
 .navigation__overlay {
     position: fixed;
     left: 0;
@@ -588,7 +588,7 @@ li {
     font-family: var(--font-secondary);
     font-size: 1.8rem;
 }
-.input-text--area {
+.input-text-area {
     resize: none;
 }
 .contact__btn {
@@ -687,17 +687,4 @@ li {
 .display-none {
     display: none;
 }
-.slide__out {
-    transform: translateY(-200%);
-}
-.slide__in {
-    transform: translateY(200%);
-}
-@media (max-width: 768px) {
-    .slide__out {
-        transform: translateX(-120%);
-    }
-    .slide__in {
-        transform: translateX(200%);
-    }
-}
+

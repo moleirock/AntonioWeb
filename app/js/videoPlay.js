@@ -1,5 +1,4 @@
 const videos = document.querySelectorAll("video");
-const mediaqueryList = window.matchMedia("(max-width: 768px)");
 
 let options = {
     rootMargin: "0px",

@@ -1,3 +1,10 @@
+const btnMenu = document.getElementById("btnMenu");
+const sideOverlay = document.getElementById("sideOverlay");
+const sideNav = document.getElementById("sideNav");
+
+
+
+
 export const toggleMenu = ()=>{
     btnMenu.addEventListener('click',()=>{
         sideOverlay.classList.toggle("display-none");

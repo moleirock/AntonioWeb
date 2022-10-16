@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html data-document="index" lang="es">
+<html data-document="index" lang="es-ES">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Bienvenido a la página personal de Antonio Moleiro">
 
@@ -43,7 +42,7 @@
             </button>
         </div>
     </header>
-    <div id="sideOverlay" class="navigation__overlay display-none">
+    <aside id="sideOverlay" class="navigation__overlay display-none">
         <div id="sideNav" class="navigation__side slide__out">
             <a href="index.html">
                 <picture>
@@ -61,7 +60,7 @@
                         src="assets/icons/contact.svg" alt="icono contact" width="28" height="28">Contacto</a>
             </nav>
         </div>
-    </div>
+    </aside>
     <main>
         <section id="home" class="home">
             <div id="hero" class="hero">
@@ -151,7 +150,7 @@
             </div>
         </section>
         <section id="projects" class="projects">
-            <div class="sectionTitle">
+            <div class="section-title">
                 <h2>Proyectos</h2>
             </div>
             <article class="project">
@@ -294,12 +293,12 @@
             </article>
         </section>
         <section id="contact" class="informationContact">
-            <div class="sectionTitle">
+            <div class="section-title">
                 <h2>Contacto</h2>
             </div>
-            <article class="information">
+            <div class="information">
                 <div class="information__box container">
-                    <div class="information__way">
+                    <article class="information__way">
                         <div class="information__logo">
                             <img loading="lazy" src="assets/icons/phone.svg" alt="phone icon" width="48" height="48">
                         </div>
@@ -308,8 +307,8 @@
                             Puedes llamarme de 9:00 - 18:00 al <a class="information__link"
                                 href="tel:654654654">654654654</a>
                         </p>
-                    </div>
-                    <div class="information__way">
+                    </article>
+                    <article class="information__way">
                         <div class="information__logo">
                             <img loading="lazy" src="assets/icons/email.svg" alt="email icon" width="48" height="48">
                         </div>
@@ -318,8 +317,8 @@
                             Envíame un email a <a class="information__link"
                                 href="mailto:antonio@moleiro.es">antonio@moleiro.es</a>
                         </p>
-                    </div>
-                    <div class="information__way">
+                    </article>
+                    <article class="information__way">
                         <div class="information__logo">
                             <img loading="lazy" src="assets/icons/address.svg" alt="address icon" width="48"
                                 height="48">
@@ -328,9 +327,9 @@
                         <address class="information__text font-secondary">
                             C/ Camino de los labajos, nave 7, Nº 14, 28440 Guadarrama, Madrid.
                         </address>
-                    </div>
+                    </article>
                 </div>
-            </article>
+            </div>
             <div class="contact">
                 <div class="contact__box container">
                     <div class="contact__imgBox">
@@ -347,24 +346,24 @@
                                 <legend class="contact__legend">Contacto</legend>
                                 <div class="fields">
                                     <div class="field">
-                                        <label>Nombre </label> <input class="input-text" type="text" name="name"
+                                        <label for="">Nombre </label> <input class="input-text" type="text" name="name" id="name"
                                             placeholder="Nombre">
                                     </div>
                                     <div class="field">
-                                        <label>Teléfono </label>
-                                        <input class="input-text" type="tel" name="phone" placeholder="Teléfono">
+                                        <label for="phone">Teléfono </label>
+                                        <input class="input-text" type="tel" name="phone" id="phone" placeholder="Teléfono">
                                     </div>
                                     <div class="field">
-                                        <label>Email </label>
-                                        <input class="input-text" type="email" name="email" placeholder="E-mail">
+                                        <label for="email">Email </label>
+                                        <input class="input-text" type="email" name="email" id="email" placeholder="E-mail" required>
                                     </div>
                                     <div class="field">
-                                        <label>Mensaje </label><textarea class="input-text input-text--area"
-                                            name="message" cols="30" rows="10"
-                                            placeholder="¡Envíame un email!"></textarea>
+                                        <label for="message">Mensaje </label><textarea class="input-text input-text-area"
+                                            name="message" id="message" cols="30" rows="10"
+                                            placeholder="¡Envíame un email!" required></textarea>
                                     </div>
                                     <div class="field">
-                                        <label><input type="checkbox"><small>
+                                        <label for="privacity"><input type="checkbox" id="privacity" required><small>
                                                 Acepto la <a class="field__link" href="#">política de
                                                     privacidad</a></small></label>
                                     </div>
@@ -404,11 +403,11 @@
                 </div>
             </div>
             <div class="div">
-                <p class="footer__copy">Copyright © Todos los derechos reservados.</p>
+                <p class="footer__copy">Copyright &#169 Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
-    <script type="module" src="js/script.js"></script>
+    <script type="module" src="js/main.js"></script>
     <script src="js/modernizr.js"></script>
 </body>
 
