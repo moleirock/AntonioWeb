@@ -25,5 +25,11 @@ export const playVideo = () => {
             video.addEventListener("mouseleave", () => {
                 video.play();
             });
+            video.addEventListener("touchstart", () => {
+                video.pause();
+            });
+            video.addEventListener("touchend", () => {
+                video.play();
+            });
     }
 };
