@@ -25,6 +25,7 @@ html {
 }
 
 /* GLOBALS */
+
 body {
     font-size: 1.8rem;
     font-family: var(--font-primary);
@@ -56,6 +57,7 @@ li {
 }
 
 /* GENERAL */
+
 .webp .home {
     background-image: url(../assets/img/bgIndex.webp);
 }
@@ -72,6 +74,7 @@ li {
     max-width: 140rem;
     margin: 0 auto;
 }
+
 .active {
     border-bottom: var(--color-primary) solid 3px;
 }
@@ -81,6 +84,7 @@ li {
         background-color: #e3a14c;
     }
 }
+
 .btn {
     background: unset;
     cursor: pointer;
@@ -111,6 +115,7 @@ li {
 .section-title h2 {
     font-size: 4.4rem;
 }
+
 /* HEADER */
 
 .head {
