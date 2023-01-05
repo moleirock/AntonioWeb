@@ -1,7 +1,4 @@
-export const hideHead = () => {
-    wheelScroll();
-    swipeScroll();
-};
+const head = document.getElementById("head");
 
 const wheelScroll = () => {
     window.addEventListener("wheel", (e) => {
@@ -24,4 +21,9 @@ const swipeScroll = () => {
             head.style.transform = "unset";
         }
     });
+};
+
+export const hideHead = () => {
+    wheelScroll();
+    swipeScroll();
 };

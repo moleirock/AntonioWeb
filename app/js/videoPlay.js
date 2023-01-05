@@ -1,5 +1,4 @@
 const videos = document.querySelectorAll("video");
-const mediaqueryList = window.matchMedia("(max-width: 768px)");
 
 let options = {
     rootMargin: "0px",
@@ -18,22 +17,19 @@ const ob = new IntersectionObserver((entries) => {
 
 export const playVideo = () => {
     for (const video of videos) {
-        if (mediaqueryList.matches) {
             ob.observe(video);
-
+          
+            video.addEventListener("mouseover", () => {
+                video.pause();
+            });
+            video.addEventListener("mouseleave", () => {
+                video.play();
+            });
             video.addEventListener("touchstart", () => {
                 video.pause();
             });
             video.addEventListener("touchend", () => {
                 video.play();
             });
-        } else {
-            video.addEventListener("mouseover", () => {
-                video.play();
-            });
-            video.addEventListener("mouseleave", () => {
-                video.pause();
-            });
-        }
     }
 };
